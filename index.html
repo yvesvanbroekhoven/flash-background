@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<meta http-equiv="Content-Language" content="nl-BE"> Only use if site is in non US english -->
+  <!--<meta name="Language" content="english"> Only use if site is in non US english -->
+  <meta charset="utf-8" />
+  <meta name="description" content="">
+
+  <title>Flash Background</title>
+  
+  <link rel="stylesheet" href="screen.css" type="text/css" media="screen">
+
+</head>
+<body>
+<div id="background">
+  <div id="videoplayer"></div>
+</div>
+<div id="wrapper">
+  content
+</div>
+
+<script src="swfobject.js"></script>
+<script type="text/javascript">
+
+    var params = { 
+      allowScriptAccess: "always",
+      wmode: "transparent"
+    };
+    var atts = { id: "videoplayer" };
+    swfobject.embedSWF("http://www.youtube.com/e/C_u1WbGAUqs?enablejsapi=1&playerapiid=ytplayer",
+                       "videoplayer", "100%", "100%", "8", null, null, params, atts);
+
+</script>
+</body>
+</html>
